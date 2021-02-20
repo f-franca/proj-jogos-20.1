@@ -1,6 +1,8 @@
 !!!Implementar o HUD!!!
 Camera começa de cima mostrando o mapa inteiro, depois abaixa
-Implementar o tempo
+Criar um GameObject "GameController"(para controlar HUD, Game Over, Game Win, controla o tempo)
+Implementar o tempo 
 Menu Inicial (nova cena)
 Ao chegar no objetivo, encerrar o jogo (nova cena)
 Efeito Sonoro
+Quando cair da rua, GAME OVER
