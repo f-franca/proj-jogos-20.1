@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -34,6 +34,11 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalMove);
         }
         //transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalMove);
+
+        if (transform.position.y < -1.0)
+        {
+            FindObjectOfType<GameController>().EndGame();
+        }
     }
 
     public void ConsumeFuel(int amount)
