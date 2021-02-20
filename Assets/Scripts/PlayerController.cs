@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 6f;
 
     private bool canPlayerMove = true;
-
+    private int fuel = 50;
 
     // Start is called before the first frame update
     void Start()
@@ -34,5 +34,16 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalMove);
         }
         //transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalMove);
+    }
+
+    public void ConsumeFuel(int amount)
+    {
+        this.fuel -= amount;
+        Debug.Log($"Fuel consumed: {amount}, total fuel left: {this.fuel}");
+    }
+
+    public int GetFuel()
+    {
+        return this.fuel;
     }
 }
