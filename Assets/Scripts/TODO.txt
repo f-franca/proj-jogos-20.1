@@ -1,8 +1,10 @@
-!!!Implementar o HUD!!!
-Camera começa de cima mostrando o mapa inteiro, depois abaixa
+!!!Implementar o HUD!!! - Ok
 Criar um GameObject "GameController"(para controlar HUD, Game Over, Game Win, controla o tempo)
-Implementar o tempo 
-Menu Inicial (nova cena)
+Implementar o tempo - OK
+Menu Inicial (nova cena) - OK
+Musica de fundo - Ok
+Quando cair da rua, GAME OVER - Ok
+Impedir que o carro gire, para não voar.
+Camera começa de cima mostrando o mapa inteiro, depois abaixa
 Ao chegar no objetivo, encerrar o jogo (nova cena)
-Efeito Sonoro
-Quando cair da rua, GAME OVER
+Efeito Sonoro para o carro
