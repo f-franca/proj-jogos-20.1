@@ -8,3 +8,11 @@ Impedir que o carro gire, para não voar. - Ok
 Camera começa de cima mostrando o mapa inteiro, depois abaixa
 Ao chegar no objetivo, encerrar o jogo (nova cena)
 Efeito Sonoro para o carro
+Pontos de gasolina
+Chegando no objetivo, seguir para a fase seguinte (ou game win) - OK
+SE VOANDO, não RECEBER INPUT
+Usar as cercas dos Assets baixados!!
+Definir grande grafo principal
+Geração de custos aleatória
+Rodar djikstra para calcular custo mínimo
+ATUALIZAR o public "leastCost" do gameObject do objetivo para o custo do djikstra

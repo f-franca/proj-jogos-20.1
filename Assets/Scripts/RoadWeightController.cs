@@ -29,7 +29,7 @@ public class RoadWeightController : MonoBehaviour
         if (other.tag == "Player")
         {
             playerControllerScript = other.GetComponent<PlayerController>();
-            Debug.Log("Consumir combustível:" + m_TextComponent.text);
+            //Debug.Log("Consumir combustível:" + m_TextComponent.text);
 
             try
             {
