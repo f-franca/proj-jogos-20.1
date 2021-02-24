@@ -10,7 +10,7 @@ Ao chegar no objetivo, encerrar o jogo (nova cena) - OK
 Efeito Sonoro para o carro
 Pontos de gasolina - Talvez tirar
 Chegando no objetivo, seguir para a fase seguinte (ou game win) - OK
-SE VOANDO, não RECEBER INPUT
+SE VOANDO, não RECEBER INPUT - OK
 Usar as cercas dos Assets baixados!!
 Definir grande grafo principal
 Geração de custos aleatória
