@@ -41,6 +41,11 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    public void GoToScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
     public void MuteSound()
     {
         if (AudioListener.volume == 0)
