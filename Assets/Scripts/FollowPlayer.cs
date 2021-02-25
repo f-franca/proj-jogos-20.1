@@ -8,9 +8,9 @@ public class FollowPlayer : MonoBehaviour
     public float speed = 5f;
     public float smoothSpeed = 1f;
     public  Vector3 offset = new Vector3(0, 8, -11);
+    public bool lookAt = true;
 
     private Space offsetPositionSpace = Space.Self;
-    private bool lookAt = true;
 
 
     // Start is called before the first frame update

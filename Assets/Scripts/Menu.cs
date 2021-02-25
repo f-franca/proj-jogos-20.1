@@ -30,9 +30,20 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void RestartGame()
+    {
+        
+        SceneManager.LoadScene(1);
+    }
+
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void GoToScene(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 
     public void MuteSound()

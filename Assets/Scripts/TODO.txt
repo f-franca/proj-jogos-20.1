@@ -1,10 +1,18 @@
 !!!Implementar o HUD!!! - Ok
-Criar um GameObject "GameController"(para controlar HUD, Game Over, Game Win, controla o tempo)
+Criar um GameObject "GameController"(para controlar HUD, Game Over, Game Win, controla o tempo) - OK
 Implementar o tempo - OK
 Menu Inicial (nova cena) - OK
 Musica de fundo - Ok
 Quando cair da rua, GAME OVER - Ok
 Impedir que o carro gire, para não voar. - Ok
 Camera começa de cima mostrando o mapa inteiro, depois abaixa
-Ao chegar no objetivo, encerrar o jogo (nova cena)
+Ao chegar no objetivo, encerrar o jogo (nova cena) - OK
 Efeito Sonoro para o carro
+Pontos de gasolina - Talvez tirar
+Chegando no objetivo, seguir para a fase seguinte (ou game win) - OK
+SE VOANDO, não RECEBER INPUT - OK
+Usar as cercas dos Assets baixados!!
+Definir grande grafo principal
+Geração de custos aleatória
+Rodar djikstra para calcular custo mínimo
+ATUALIZAR o public "leastCost" do gameObject do objetivo para o custo do djikstra
