@@ -183,7 +183,7 @@ public class RoadWeights : MonoBehaviour
         Dijkstra d = new Dijkstra();
         var dist = d.DijkstraAlgo(graph, 0, 10);
         Debug.Log($"distancia minima {dist.ToString()}");
-        playerController.setFuel(dist + 10);
+        playerController.setFuel(dist + 1);
         objectiveController.setLeastCost(dist);
 
 
