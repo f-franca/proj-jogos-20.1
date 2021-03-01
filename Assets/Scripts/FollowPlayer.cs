@@ -12,6 +12,7 @@ public class FollowPlayer : MonoBehaviour
 
     private Space offsetPositionSpace = Space.Self;
 
+    public float timeRemainingToStart = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -35,30 +36,40 @@ public class FollowPlayer : MonoBehaviour
     
     void LateUpdate()
     {
-        
-        // compute position
-        if (offsetPositionSpace == Space.Self)
-        {
-            Vector3 desiredPosition = player.transform.TransformPoint(offset);
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
 
-            //transform.position = player.transform.TransformPoint(offset);
-            transform.position = smoothedPosition;
-            //transform.position = desiredPosition;
+        if (timeRemainingToStart > 0)
+        {
+            timeRemainingToStart -= Time.deltaTime;
+            transform.position = new Vector3(-1.2f, 280.5f,125.9f);
+      
         }
         else
         {
-            transform.position = player.transform.position + offset;
-        }
 
-        // compute rotation
-        if (lookAt)
-        {
-            transform.LookAt(player.transform);
-        }
-        else
-        {
-            transform.rotation = player.transform.rotation;
+            // compute position
+            if (offsetPositionSpace == Space.Self)
+            {
+                Vector3 desiredPosition = player.transform.TransformPoint(offset);
+                Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
+
+                //transform.position = player.transform.TransformPoint(offset);
+                transform.position = smoothedPosition;
+                //transform.position = desiredPosition;
+            }
+            else
+            {
+                transform.position = player.transform.position + offset;
+            }
+
+            // compute rotation
+            if (lookAt)
+            {
+                transform.LookAt(player.transform);
+            }
+            else
+            {
+                transform.rotation = player.transform.rotation;
+            }
         }
     }
 
