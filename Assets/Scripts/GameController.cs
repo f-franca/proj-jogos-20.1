@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public Text timerText;
     public Text fuelText;
     public float timeRemaining = 60;
+    private GameFinishController gameFinishScript;
     //public GameObject completeLevelUI;
 
 
@@ -36,8 +37,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            Debug.Log("GAME OVER");
-            Invoke("Restart", restartdelay);
+            EndGame();
         }
 
         if (player.GetFuel() > 0)
@@ -46,8 +46,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            Debug.Log("GAME OVER");
-            Invoke("Restart", restartdelay);
+            EndGame();
         }
 
     }
@@ -58,7 +57,9 @@ public class GameController : MonoBehaviour
         {
             gameover = true;
             Debug.Log("GAME OVER");
-            Invoke("Restart", restartdelay);
+            gameFinishScript = GameObject.Find("Game Finish Controller").GetComponent<GameFinishController>();
+            gameFinishScript.SetWinState(false);
+            SceneManager.LoadScene("Game Finish");
         }
     }
     void Restart()
