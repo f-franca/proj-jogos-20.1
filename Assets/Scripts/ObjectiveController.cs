@@ -36,7 +36,7 @@ public class ObjectiveController : MonoBehaviour
                 Debug.Log("Conseguiu fazer caminho mínimo");
 
                 gameFinishScript.SetWinState(true);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene("Game Finish");
             }
             else
             {
